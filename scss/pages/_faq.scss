@@ -1,0 +1,86 @@
+.welcome-faq {
+  background: linear-gradient(to bottom, rgba(#111, 0.6)), url("../img/faq.png");
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.section-faq {
+  padding: 10rem 0;
+}
+
+.faq-flex {
+  justify-content: center;
+}
+
+.faq-box {
+  margin-bottom: 10rem;
+
+  &__header {
+    background-color: $color-blue;
+    padding: 3rem;
+    text-transform: uppercase;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 4rem;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    padding: 2rem 3rem;
+    background-color: $color-blue-light-2;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      transition: all 0.2s;
+      margin: 0;
+      color: $color-blue;
+      font-size: 2rem;
+    }
+    p {
+      display: none;
+    }
+
+    &--active {
+      h2 {
+        color: $color-orange-light;
+      }
+    }
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    list-style: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: $color-grey-dark;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    transition: all 0.3s;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    &--active {
+      color: $color-orange-light;
+      font-size: 17px;
+    }
+  }
+
+  &__para {
+    padding: 2rem 3rem;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

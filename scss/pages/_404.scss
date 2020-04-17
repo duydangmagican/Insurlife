@@ -1,0 +1,27 @@
+.section-404 {
+  background-color: $color-blue-light-2;
+  height: calc(100vh - 11rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.e404 {
+  text-align: center;
+
+  &__heading-sub {
+    margin: 0;
+    font-size: 2rem;
+    color: $color-orange-light;
+  }
+
+  &__heading-main {
+    font-size: 10rem;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    color: $color-blue;
+    text-transform: uppercase;
+  }
+}

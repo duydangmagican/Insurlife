@@ -1,0 +1,137 @@
+.section-contact-us {
+  padding: 10rem 0;
+}
+
+.welcome-contact {
+  background: linear-gradient(to bottom, rgba(#111, 0.6)),
+    url(../img/contact-us.png);
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.information {
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    padding-left: 3rem;
+    background-color: $color-grey-dark-3;
+
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 3rem;
+      color: $color-orange-light;
+      margin-right: 1rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $color-blue;
+  }
+
+  &__item {
+    padding: 1rem;
+    padding-left: 3rem;
+    background-color: $color-blue-light-2;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+
+    span:nth-child(1) {
+      color: $color-grey-dark;
+    }
+    span:nth-child(2) {
+      color: #333;
+    }
+  }
+}
+
+.get-in-touch {
+  background-color: $color-blue-light-2;
+  background-clip: margin-box;
+  padding: 5rem;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+
+  &__form {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+  }
+
+  &__input {
+    background-color: $color-blue-light-2;
+    outline: none;
+    border: none;
+    border: 0.75px solid $color-grey-dark;
+    color: $color-grey-dark;
+    font-size: 1.4rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    grid-row: span 1;
+    grid-column: span 1;
+
+    &:focus {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &__txt {
+    background-color: $color-blue-light-2;
+    padding: 1rem;
+    grid-row: span 3;
+    grid-column: span 2;
+    outline: none;
+    border: none;
+    border: 0.75px solid $color-grey-dark;
+    color: $color-grey-dark;
+  }
+}
+
+.find-agents {
+  position: relative;
+  background: url("../img/find-agents.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.note {
+  background-color: #fff;
+  box-sizing: content-box;
+  position: absolute;
+  top: 60%;
+  left: 5rem;
+
+  &__para {
+    padding: 3rem;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.6;
+    font-family: "Oswald", sans-serif;
+    color: $color-black-dark;
+    background-color: #fff;
+  }
+}
+
+.flex {
+  // chu y responsive mobile thi chuyen thanh column & margin bottom
+  display: flex !important;
+
+  & > * {
+    flex: 50%;
+  }
+}

@@ -1,0 +1,290 @@
+/*
+0 - 739px : phone
+740px - 1080px : tab-por
+1081px - 1239px : tab-lan
+>= 1250 : normal
+
+*/
+
+/* 1081 - 1239 */
+
+@media only screen and (min-width: 67.5625em) and (max-width: 77.4375em) {
+  .feedback__left {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+
+  .news__left {
+    padding: 0;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news__left p {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .news__right {
+    padding: 5rem;
+  }
+
+  .news__right > * {
+    margin-left: 20px;
+  }
+}
+
+/* 855 - 1080 */
+
+@media only screen and (min-width: 53.4375em) and (max-width: 67.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .feedback__right {
+  }
+
+  .find__space {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/*  <= 863xp */
+@media only screen and (max-width: 53.9375em) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .special-dot {
+    height: 550px;
+  }
+
+  .find-agents {
+    margin-top: 24px;
+  }
+
+  .login__log-in {
+    order: 1;
+    margin-bottom: 10rem;
+  }
+
+  .login__log-in .login__input {
+    width: 84%;
+  }
+
+  .login__sign-up {
+    order: 2;
+  }
+
+  .support {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .sidebar {
+    margin-right: 0;
+  }
+
+  .infor__box::after {
+    display: none;
+  }
+}
+
+/* 745px - 854px */
+@media only screen and (min-width: 46.5625em) and (max-width: 53.375em) {
+  html {
+    font-size: 45%;
+  }
+
+  .support__item {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support__image {
+    width: 425px;
+  }
+
+  .support__paragraph {
+    width: 50vw;
+  }
+
+  .faq__text {
+    width: 50vw;
+  }
+
+  .find__space {
+    margin-bottom: 3rem;
+  }
+
+  .feedback__col {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .feedback__left {
+    /* flex: 0 0 90% !important;
+    max-width: 90% !important; */
+    margin-bottom: 10rem;
+  }
+
+  .news__group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news__left {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .news__right {
+    flex: 0 0 90% !important;
+    max-width: 90% !important;
+  }
+}
+
+/* <= 854px*/
+@media only screen and (max-width: 53.375em) {
+  .support__item {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* <= 747px */
+@media only screen and (max-width: 46.6875em) {
+  .welcome__primary-heading {
+    font-size: 7rem;
+    margin: 1.4em 0;
+  }
+
+  .news__subscribe .heading-primary {
+    font-size: 3.2rem;
+  }
+  .find__space {
+    margin-bottom: 0;
+  }
+  .login__log-in .login__input {
+    width: 82%;
+  }
+
+  .infor__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* <= 744px*/
+@media only screen and (max-width: 46.5em) {
+  html {
+    font-size: 45%;
+  }
+
+  .support__image {
+    width: 80%;
+    height: auto;
+  }
+
+  .feedback__left {
+    margin-bottom: 10rem;
+  }
+
+  .news__left {
+    margin-bottom: 10rem;
+  }
+
+  .support__image {
+    width: 425px;
+  }
+
+  .nav-sub {
+    display: block;
+  }
+}
+
+/*550px - 743px*/
+@media only screen and (min-width: 34.375em) and (max-width: 46.4375em) {
+  .header i {
+    display: block;
+  }
+
+  .header h2 {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    height: 60%;
+  }
+
+  .support__image {
+    width: 425px;
+  }
+}
+
+/*549px*/
+@media only screen and (max-width: 34.3125em) {
+  html {
+    font-size: 40%;
+  }
+
+  .header > h2 {
+    display: none;
+  }
+
+  .header i {
+    display: block;
+  }
+
+  .logo {
+    height: 60%;
+  }
+
+  .find__space {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .find__image {
+    width: 80%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .support__image {
+    width: 100%;
+  }
+
+  .footer__image {
+    width: 92%;
+  }
+
+  .news__right--2 {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 31.8125em) {
+  .footer__left,
+  .footer__right {
+    display: none;
+  }
+
+  .footer__middle {
+    margin: 0 auto;
+  }
+}

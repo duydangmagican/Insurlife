@@ -1,0 +1,25 @@
+/*
+0 - 739px : phone
+740px - 1023px : tab-por
+1024px - 1239px : tab-lan
+>= 1250 : normal
+
+*/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media only screen and (max-width: 46.1875em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tab-por) {
+    @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tab-lan) {
+    @media only screen and (min-width: 64em) and (max-width: 77.4375em) {
+      @content;
+    }
+  }
+}

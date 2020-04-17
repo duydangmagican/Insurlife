@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+  //font-size: calc(12px + 1vw);
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Oswald", sans-serif;
+  color: $color-black-dark;
+  background-color: #fff;
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  line-height: 1.714;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.heading-secondary {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $color-orange-light;
+  box-sizing: border-box;
+}

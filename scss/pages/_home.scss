@@ -1,0 +1,373 @@
+.section-welcome {
+  height: calc(100vh - 11rem);
+}
+
+.welcome-home {
+  background: linear-gradient(to bottom, rgba(#111, 0.3)), url(../img/2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__sub-heading {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  &__primary-heading {
+    display: inline-block;
+    font-size: 10rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  &__bottom {
+    position: relative;
+  }
+
+  &__scroll {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  &__scroll-icon {
+    transform: translateX(4px);
+    background: url(../img/scroll.png);
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.section-support {
+  padding: 10rem 0;
+}
+
+.support {
+  margin-right: 24px;
+  &__item {
+    text-align: center;
+    margin-bottom: 8rem;
+    align-self: center;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__text-box {
+    margin: 6rem 0;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2.4rem;
+    font-family: "Poppins";
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.section-insurance {
+  background-color: $color-blue;
+  height: 67rem;
+  padding: 10rem 0;
+}
+
+.insurance {
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweens;
+
+  &__content {
+    margin: 2rem 0;
+  }
+
+  &__item {
+    padding: 1rem 0;
+    transition: all 0.3s;
+    transform: translateY(5px);
+
+    &:hover {
+      transform: translateY(-8px);
+
+      .insurance__read-more {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+  }
+
+  &__read-more {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-orange-light;
+    visibility: hidden;
+  }
+}
+
+.section-find {
+  padding: 10rem 0;
+  background: url(../img/find-1.png), url(../img/find-2.png);
+  background-color: $color-blue-light;
+  background-size: cover;
+  height: 86rem;
+}
+
+.find {
+  &__text {
+  }
+  &__map {
+  }
+
+  &__space {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    @include respond(tab-lan) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  &__score {
+    color: $color-blue;
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    span {
+      font-weight: bold;
+      display: block;
+
+      &:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 10rem;
+        //margin-bottom: 0.417em;
+      }
+
+      &:nth-child(2) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.section-feedback {
+  padding: 10rem 0;
+}
+
+.feedback {
+  background-color: #fff;
+
+  &__col {
+    justify-content: space-between;
+  }
+
+  &__left {
+    padding: 5rem;
+    background-color: $color-blue-light-2;
+    background-clip: padding-box;
+    box-sizing: border-box;
+
+    // flex: 0 0 calc(66.66667% - 12px) !important;
+    // max-width: calc(66.66667% - 12px) !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    //margin-right: -15px;
+  }
+
+  &__right {
+    background-color: $color-blue-light-2;
+    background-clip: content-box;
+  }
+
+  &__text {
+    color: #000;
+  }
+
+  &__main-title {
+    margin-left: 2.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__sub-title {
+    display: block;
+    color: $color-grey-dark;
+    font-weight: 500;
+  }
+
+  &__group {
+    margin-top: 5rem;
+    display: flex;
+  }
+
+  &__slide {
+    margin-left: auto;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__col-second {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    border-bottom: 1px solid white;
+    align-self: center;
+    padding: 0.5rem 0;
+
+    &:last-child {
+      border: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__award {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10.4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: $color-orange-light;
+  }
+}
+
+.section-news {
+  padding: 0 0 10rem 0;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+
+.news {
+  text-align: center;
+  word-wrap: break-word;
+
+  p {
+    margin-top: 1.87em;
+    margin-bottom: 1.87em;
+  }
+
+  &__group {
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-orange-light;
+    margin-bottom: 5rem;
+  }
+
+  &__left {
+    padding: 4rem;
+    background-color: $color-blue-light-2;
+  }
+
+  &__right--2 {
+    text-align: left;
+    padding: 5rem;
+    color: #fff;
+    background: url(../img/news-bg.png), url(../img/news-1.png);
+    background-size: cover;    
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-grey-light;
+  }
+
+  &__subscribe {
+    margin-top: 8rem;
+
+    border-bottom: 1px solid $color-orange-light;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      color: $color-grey-light;
+    }
+
+    & > h1 {
+      margin-left: 5px;
+    }
+
+    & > a {
+      margin-right: 5px;
+    }
+  }
+}
